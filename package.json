@@ -1,0 +1,15 @@
+{
+  "name": "slack-todo-exporter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Export your Slack To-dos from the browser to TXT, CSV, and JSON without an account token.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build-setup.cjs",
+    "test": "node tests/verify.cjs",
+    "check": "node --check src/capture.js && node --check scripts/build-setup.cjs && node --check tests/verify.cjs && npm run build && npm test",
+    "screenshot": "npm run build && node tests/verify.cjs --screenshot"
+  },
+  "devDependencies": { "playwright-core": "1.58.2" }
+}

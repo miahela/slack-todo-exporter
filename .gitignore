@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+exports/
+captures/
+slack-todos-*.json
+slack-todos-*.txt
+slack-todos-*.csv
+slack-page-structure-*.json
+browser-profile/
+playwright-report/
+test-results/
+*.log
